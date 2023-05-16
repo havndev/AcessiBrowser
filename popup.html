@@ -4,39 +4,48 @@
   <title>AcessiBrowser</title>
   <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
   <div id="mainMenu">
     <h1 style="text-align: center;margin-top: 0%;">AcessiBrowser</h1>
     <div class="navbar">
-      <ul style="display: flex; flex-direction: column;">
-        <li id="menu"><a id="menu1">Fonte</a></li>
-        <li id="menu"><a id="menu2">Filtros de Cor</a></li>
-        <li id="menu"><a id="menu3">ColorAdd</a></li>
-        <li id="menu"><a id="menu4">Opcoes</a></li>
+      <ul style="display: flex; flex-direction: column;align-items: center;">
+
+        <li class="butao"><a  id="menu1">Fonte</a></li>
+        <li class="butao"><a  id="menu2">Filtros de Cor</a></li>
+        <li class="butao" tabindex="0"><a  id="menu3">ColorAdd</a></li>
+        <li class="butao"><a  id="menu4">Opcoes</a></li>
       </ul>
     </div>
   </div>
 
   <div id="mainForm">
     <div class="normalForm" id="form1">
-      <a id="goBack1"> &larr; </a>
-      <h3>Fonte</h3>
+      <h3 class="TituloMenu">Fonte</h3>
+      <div>
+        <button  class="backbutton" id="goBack1"> &larr; </button>
+      </div>
     </div>
   
-    <div class="normalForm" id="form2">
-      <a id="goBack2"> &larr; </a>
-      <h3>Filtros</h3>
+    <div class="normalForm" id="form2" >
+      <h3  class="TituloMenu" style="text-align: center;">Filtros de Cor</h3>
+      <div>
+        <button  class="backbutton" id="goBack2"> &larr; </button>
+      </div>
     </div>
   
     <div class="normalForm" id="form3">
-      <a id="goBack3"> &larr; </a>
-      <h3>ColorAdd</h3>
+      <h3  class="TituloMenu" style="text-align: center;">ColorAdd</h3>
+      <div>
+        <button  class="backbutton" id="goBack3"> &larr; </button>
+      </div>
     </div>
   
     <div class="normalForm" id="form4">
-      <a id="goBack4"> &larr; </a>
-      <h3>Opcoes</h3>
-    </div>
+      <h3  class="TituloMenu" style="text-align: center;">Opcoes</h3>
+      <div>
+        <button  class="backbutton" id="goBack4"> &larr; </button>
+      </div>
   </div>
   
 <script src="popup.js"></script>

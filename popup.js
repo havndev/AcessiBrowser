@@ -120,26 +120,24 @@ menu2.addEventListener('click', () => {
 });
 
 menu3.addEventListener('click', () => {
- if (mainForm.style.display === 'none') {
-   mainMenu.style.display = 'none';
-   mainForm.style.display = 'block';
-   form1.style.display = 'none';
-   form2.style.display = 'none';
-   form3.style.display = 'block';
-   form4.style.display = 'none';
- }
- else if (mainForm.style.display === '') {
-   mainMenu.style.display = 'none';
-   mainForm.style.display = 'block';
-   form1.style.display = 'none';
-   form2.style.display = 'none';
-   form3.style.display = 'block';
-   form4.style.display = 'none';
- }
- else  {
-   mainForm.style.display = 'none';
- }
-});
+  if(menu3.style.outline== 'none') {
+menu3.style.background='#ffffff'
+menu3.style.color = '#000000'
+menu3.style.outline='auto'
+menu3.style.outlineColor='black'
+  }
+  else if (menu3.style.outline== ''){
+    menu3.style.background='#ffffff'
+    menu3.style.color = '#000000'
+    menu3.style.outline='auto'
+    menu3.style.outlineColor='black'  
+  }
+  else{
+    menu3.style.background="#f0bd7b"
+    menu3.style.color="#ffffff"
+    menu3.style.outline="none"
+  }
+  } );
 
 menu4.addEventListener('click', () => {
  if (mainForm.style.display === 'none') {
