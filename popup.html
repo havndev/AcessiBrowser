@@ -3,36 +3,42 @@
 <head>
   <title>AcessiBrowser</title>
   <link rel="stylesheet" href="popup.css">
- 
 </head>
 <body>
-<h1 style="text-align: center;margin-top: 0%;">AcessiBrowser</h1>
-<div class="navbar">
-  <ul>
-    <li  id="menu"><a  id="menu1">Fonte</a></li>
-    <li id="menu"><a  id="menu2">Filtros de Cor</a></li>
-    <li id="menu"><a  id="menu3">ColorAdd</a></li>
-    <li id="menu"><a  id="menu4">Opcoes</btn></li>
-  </ul>
-</div>
+  <div id="mainMenu">
+    <h1 style="text-align: center;margin-top: 0%;">AcessiBrowser</h1>
+    <div class="navbar">
+      <ul style="display: flex; flex-direction: column;">
+        <li id="menu"><a id="menu1">Fonte</a></li>
+        <li id="menu"><a id="menu2">Filtros de Cor</a></li>
+        <li id="menu"><a id="menu3">ColorAdd</a></li>
+        <li id="menu"><a id="menu4">Opcoes</a></li>
+      </ul>
+    </div>
+  </div>
 
-<div id="form1">
-  <h3>Fonte</h3>
-</div>
-
-<div id="form2">
-  <h3>Filtros</h3>
-</div>
-
-<div id="form3">
-  <h3>ColorAdd</h3>
-</div>
-
-<div id="form4">
-  <h3>Opcoes</h3>
-</div>
-
-
+  <div id="mainForm">
+    <div class="normalForm" id="form1">
+      <a id="goBack1"> &larr; </a>
+      <h3>Fonte</h3>
+    </div>
+  
+    <div class="normalForm" id="form2">
+      <a id="goBack2"> &larr; </a>
+      <h3>Filtros</h3>
+    </div>
+  
+    <div class="normalForm" id="form3">
+      <a id="goBack3"> &larr; </a>
+      <h3>ColorAdd</h3>
+    </div>
+  
+    <div class="normalForm" id="form4">
+      <a id="goBack4"> &larr; </a>
+      <h3>Opcoes</h3>
+    </div>
+  </div>
+  
 <script src="popup.js"></script>
 </body>
 </html>
