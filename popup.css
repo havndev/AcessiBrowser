@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+
+body {
+    background-color: #caf0f8;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    color: #000000;
+    font-family: 'Quicksand', sans-serif; 
+  }
+
+
+  
+  .menu-container {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #menu-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;    
+    margin-top: 10px;
+    text-align: center;}
+
+  
+
+
+  .navbar {
+    background-color: #f0bd7b;
+    border-radius: 20px;
+    padding: 10px;
+    outline: auto;
+    outline-color: #000000;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  
+  /* Style the navbar ul */
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+
+  /* Style the navbar li */
+  .navbar li {
+    flex: 1;
+    width: 120px;
+  }
+  
+  /* Style the navbar links */
+  .navbar a {
+    background-color: #f0bd7b;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+   #menu{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #menu:hover{
+  background-color: #ffffff;
+color: #000000;
+border-radius: 20px;
+outline: auto;
+outline-color: #000000;
+  }
+
+
+  
+  #form1{
+    display: none;
+    border-radius: 5%;
+    background:rgb(255, 255, 255);
+    width: 100%;
+    height: 70%;
+    outline:auto;
+    outline-color: #000000;
+
+}
+
+#form2{
+  display: none;
+  border-radius: 5%;
+  background:rgb(255, 255, 255);
+  width: 100%;
+  height: 70%;
+  outline:auto;
+  outline-color: #000000;
+
+}
+
+#form3{
+  display: none;
+  border-radius: 5%;
+  background:rgb(255, 255, 255);
+  width: 100%;
+  height: 70%;
+  outline:auto;
+  outline-color: #000000;
+
+}
+
+#form4{
+  display: none;
+  border-radius: 5%;
+  background:rgb(255, 255, 255);
+  width: 100%;
+  height: 70%;
+  outline:auto;
+  outline-color: #000000;
+
+}
+
+
+
+
+   
+
+  
+  
