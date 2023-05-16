@@ -13,7 +13,7 @@
 
         <li class="butao"><a  id="menu1">Fonte</a></li>
         <li class="butao"><a  id="menu2">Filtros de Cor</a></li>
-        <li class="butao" tabindex="0"><a  id="menu3">ColorAdd</a></li>
+        <li class="butao"><a  id="menu3">ColorAdd</a></li>
         <li class="butao"><a  id="menu4">Opcoes</a></li>
       </ul>
     </div>
@@ -24,6 +24,9 @@
       <h3 class="TituloMenu">Fonte</h3>
       <div>
         <button  class="backbutton" id="goBack1"> &larr; </button>
+      </div>
+      <div>
+        <h3>Teste</h3>
       </div>
     </div>
   
@@ -38,6 +41,30 @@
       <h3  class="TituloMenu" style="text-align: center;">ColorAdd</h3>
       <div>
         <button  class="backbutton" id="goBack3"> &larr; </button>
+      </div>
+      </div>
+      
+      <div class="coloradd">
+
+        <div id="colorMenuselect">
+          <select  id="colorSelect">
+            <option value="">Select a color</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="purple">Purple</option>
+            <option value="brown">Brown</option>
+          </select>
+          <button id="coloraddButton">Convert to ColorADD</button>
+        </div>
+        
+        <div id="resultContainer" style="height: 200px;">
+          <p style="font-size: 20px;text-transform: uppercase;font-family:Arial Black;" id="resultText"></p>
+          <img id="resultImage" src="" alt="ColorADD Symbol" height="200px" width="200px" />
       </div>
     </div>
   

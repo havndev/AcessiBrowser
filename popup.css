@@ -64,7 +64,8 @@ body {
   background: #ffffff;
   color: #000000;
    border-radius: 20px; 
-   outline: none;
+   outline: auto;
+   outline-color: #000000;
   transform: scale(1.1);
 }
 
@@ -99,5 +100,47 @@ body {
   margin-top: 0;
 
 }
+
+.coloradd{
+ height: 320px;
+text-align: center ;
+}
+
+#coloraddButton{
+  background-color: #ffffff;
+  color: black;
+  height: 70px;
+  width: 150px;
+  border-radius: 15px;
+  outline: none;
+  font-size: 20px;
+}
+
+#coloraddButton:hover{
+  background-color: #f0bd7b;
+  color: black;
+  transform: scale(1.1);
+}
+
+#colorSelect{
+  width: 150px;
+  height: 70px;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#colorMenuselect{
+  display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin-top: 0;
+    padding: 20px 0;
+}
+
+
+
+
 
 

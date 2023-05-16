@@ -2,6 +2,25 @@ const menu1 = document.getElementById('menu1');
 const menu2 = document.getElementById('menu2');
 const menu3 = document.getElementById('menu3');
 const menu4 = document.getElementById('menu4');
+var button = document.getElementById("coloraddButton");
+
+  button.addEventListener("click", function () {
+    var colorSelect = document.getElementById("colorSelect");
+    var selectedColor = colorSelect.value;
+
+    console.log(selectedColor); 
+    var coloraddSymbol = convertToColorADD(selectedColor);
+    var resultText = document.getElementById("resultText");
+    var resultImage = document.getElementById("resultImage");
+
+    if (selectedColor) {
+      resultText.textContent = selectedColor;
+      resultImage.src = coloraddSymbol;
+      resultContainer.style.display = "block";
+    } else {
+      resultContainer.style.display = "none";
+    }
+  });
 
 const backBtn1 = document.getElementById('goBack1');
 const backBtn2 = document.getElementById('goBack2');
@@ -120,24 +139,26 @@ menu2.addEventListener('click', () => {
 });
 
 menu3.addEventListener('click', () => {
-  if(menu3.style.outline== 'none') {
-menu3.style.background='#ffffff'
-menu3.style.color = '#000000'
-menu3.style.outline='auto'
-menu3.style.outlineColor='black'
+  if (mainForm.style.display === 'none') {
+    mainMenu.style.display = 'none';
+    mainForm.style.display = 'block';
+    form1.style.display = 'none';
+    form2.style.display = 'none';
+    form3.style.display = 'block';
+    form4.style.display = 'none';
   }
-  else if (menu3.style.outline== ''){
-    menu3.style.background='#ffffff'
-    menu3.style.color = '#000000'
-    menu3.style.outline='auto'
-    menu3.style.outlineColor='black'  
+  else if (mainForm.style.display === '') {
+    mainMenu.style.display = 'none';
+    mainForm.style.display = 'block';
+    form1.style.display = 'none';
+    form2.style.display = 'none';
+    form3.style.display = 'block';
+    form4.style.display = 'none';
   }
-  else{
-    menu3.style.background="#f0bd7b"
-    menu3.style.color="#ffffff"
-    menu3.style.outline="none"
+  else  {
+    mainForm.style.display = 'none';
   }
-  } );
+ });
 
 menu4.addEventListener('click', () => {
  if (mainForm.style.display === 'none') {
@@ -160,3 +181,26 @@ menu4.addEventListener('click', () => {
    mainForm.style.display = 'none';
  }
 });
+
+function convertToColorADD(color) {
+ 
+  const coloraddSymbols = {
+    red: "images/coloradd_red.png",
+    green: "images/coloradd_green.png",
+    blue: "images/coloradd_blue.png",
+    yellow: "images/coloradd_yellow.png",
+    purple: "images/coloradd_purple.png",
+    orange: "images/coloradd_orange.png",
+    black: "images/coloradd_black.png",
+    white: "images/coloradd_white.png",
+    brown: "images/coloradd_brown.png",
+    
+  };
+
+  // Check if the color exists in the symbol mapping
+  if (color in coloraddSymbols) {
+    return coloraddSymbols[color];
+  } else {
+    return "Unknown color";
+  }
+}
