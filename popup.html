@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<!-- Menu Inicial -->
   <div id="mainMenu">
     <h1 style="text-align: center;margin-top: 0%;">AcessiBrowser</h1>
     <div class="navbar">
@@ -13,39 +14,114 @@
 
         <li class="butao"><a  id="menu1">Fonte</a></li>
         <li class="butao"><a  id="menu2">Filtros de Cor</a></li>
-        <li class="butao" tabindex="0"><a  id="menu3">ColorAdd</a></li>
+        <li class="butao"><a  id="menu3">ColorAdd</a></li>
         <li class="butao"><a  id="menu4">Opcoes</a></li>
       </ul>
     </div>
   </div>
 
-  <div id="mainForm">
+<!-- Div do form das fontes -->
+  <div id="mainForm" style="height:100%;height: 100%;display:none;">
     <div class="normalForm" id="form1">
       <h3 class="TituloMenu">Fonte</h3>
       <div>
         <button  class="backbutton" id="goBack1"> &larr; </button>
       </div>
-    </div>
-  
+    <div style="margin-top: 50px;font-family:Arial Black;display: flex;flex-direction: column;margin-top: 50px;justify-content: space-between;height: 70%;">
+        <div >
+        <label for="fontSelect">Fonte: </label>
+        <select id="fontSelect" style="border-radius: 10px; height: 30px;font-size: 10;">
+            <option value="">Fonte</option>
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Open Sans">Open Sans</option>
+            <option value="Dyslexie">Dyslexie</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Andika">Andika</option>
+            <option value="AccessibleDfa">AccessibleDfa</option>
+            <option value="Sylexiad">Sylexiad</option>
+            <option value="Arial Black">Arial Black</option>
+        </select>
+        </div>
+        <div>
+        <label for="fontSizeSlider">Tamanho:</label>
+        <input type="range" id="fontSizeSlider" min="10" max="50" value="12">
+        <span id="fontSizeValue">12px</span>
+        </div>
+
+        <div>
+          <label for="letterSpacingSlider">Letter Spacing:</label>
+          <input type="range" id="letterSpacingSlider" min="-1" max="5" value="0">
+          <span id="letterSpacingValue">0</span>
+        </div>
+
+        <div>
+          <label for="inputCor">Cor: </label>
+        <select id="inputCor" style="border-radius: 10px; height: 30px;font-size: 10;">
+            <option value="">Cor</option>
+            <option value="red">Vermelho</option>
+            <option value="green">Verde</option>
+            <option value="yellow">Amarelo</option>
+            <option value="white">Branco</option>
+            <option value="black">Preto</option>
+        </select>
+
+        </div>
+
+     </div>
+        
+        
+      </div>
+    
+<!-- Div do form dos filtros -->
     <div class="normalForm" id="form2" >
       <h3  class="TituloMenu" style="text-align: center;">Filtros de Cor</h3>
       <div>
         <button  class="backbutton" id="goBack2"> &larr; </button>
       </div>
+      <div>
+        
+      </div>
     </div>
-  
-    <div class="normalForm" id="form3">
+<!-- Div do Form do Color Add -->
+    <div class="normalForm" id="form3" style="display: none;">
       <h3  class="TituloMenu" style="text-align: center;">ColorAdd</h3>
       <div>
         <button  class="backbutton" id="goBack3"> &larr; </button>
       </div>
+      <!-- Input de cor e Butão -->
+      <div class="coloradd">
+        <div id="colorMenuselect">
+          <select  id="colorSelect">
+            <option value="">Select a color</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="purple">Purple</option>
+            <option value="brown">Brown</option>
+          </select>
+          <button id="coloraddButton">Convert to ColorADD</button>
+        </div>
+      <!-- Div da imagem da cor -->
+        <div id="resultContainer" style="height: 200px;">
+          <p style="font-size: 20px;text-transform: uppercase;font-family:Arial Black;" id="resultText"></p>
+          <img id="resultImage" src="" alt="ColorADD Symbol" height="200px" width="200px" />
+      </div>
     </div>
-  
+  </div>
+<!-- Div do form das opcoes -->
     <div class="normalForm" id="form4">
       <h3  class="TituloMenu" style="text-align: center;">Opcoes</h3>
       <div>
         <button  class="backbutton" id="goBack4"> &larr; </button>
       </div>
+  </div>
   </div>
   
 <script src="popup.js"></script>
