@@ -1,10 +1,9 @@
-
+//Variables
 const menu1 = document.getElementById('menu1');
 const menu2 = document.getElementById('menu2');
 const menu3 = document.getElementById('menu3');
 const menu4 = document.getElementById('menu4');
 var button = document.getElementById("coloraddButton");
-
 
 const backBtn1 = document.getElementById('goBack1');
 const backBtn2 = document.getElementById('goBack2');
@@ -20,7 +19,7 @@ const form3 = document.getElementById('form3');
 const form4 = document.getElementById('form4');
 
 
-// BOTOES GO BACK
+// Botões GoBack
 
 // MENU 1
 backBtn1.addEventListener('click', () => {
@@ -87,7 +86,9 @@ backBtn4.addEventListener('click', () => {
 });
 
 
-//BOTOES
+//Menus
+
+//Menu 1
 menu1.addEventListener('click', () => {
   console.log("clickou botao1")  
  if (mainForm.style.display === 'none') {
@@ -114,6 +115,7 @@ menu1.addEventListener('click', () => {
  }
 });
 
+//Menu 2
 menu2.addEventListener('click', () => {
   console.log("clickou botao2") 
  if (mainForm.style.display === 'none') {
@@ -137,6 +139,7 @@ menu2.addEventListener('click', () => {
  }
 });
 
+//Menu 3
 menu3.addEventListener('click', () => {
   console.log("clickou botao3") 
   if (mainForm.style.display === 'none') {
@@ -160,6 +163,7 @@ menu3.addEventListener('click', () => {
   }
  });
 
+//Menu 4
 menu4.addEventListener('click', () => {
   console.log("clickou botao4") 
  if (mainForm.style.display === 'none') {
