@@ -7,7 +7,7 @@ body {
   height: 400px;
   padding: 20px;
   color: #000000;
-  font-family: 'Quicksand', sans-serif; 
+  font-family: 'Quicksand', sans-serif;  
 }
 
 .menu-container {
@@ -138,6 +138,32 @@ text-align: center ;
     margin-top: 0;
     padding: 20px 0;
 }
+
+ #applyButton{
+  background-color: #f0bd7b;
+  color: black;
+  border-radius: 15px;
+  outline: none;
+  outline-color: white;
+  padding: 10px;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+#applyButton:hover{
+  background-color:#ffffff;
+  color: black;
+  border-radius: 15px;
+  outline: auto;
+  outline-color: #000000;
+  padding: 10px;
+  border: none;
+  transform: scale(1.1);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  
+} 
 
 
 
