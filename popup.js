@@ -284,21 +284,6 @@ function convertToColorADD(color) {
   }
 }
 
-// //Funcao da Deteranopia
-// checkboxDeuteranopia.addEventListener('click', function () {
-//   const enableDeuteranopia = checkboxDeuteranopia.checked;
-//   console.log(checkboxDeuteranopia.checked)
-//   sendMessageToContentScript({ enableDeuteranopia });
-
-//   function sendMessageToContentScript(message) {
-//     console.log('Sending message to content script:', message);
-//     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-//       chrome.tabs.sendMessage(tabs[0].id, message);
-//     });
-//   }
-  
-// });
-
 
 
 
