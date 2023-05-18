@@ -4,7 +4,7 @@
   "description":"Extensaõ que perrmite mudar tipo de fonte e tamanho da mesma no browser.",
   "version": "1.0",
 
-  "permissions": ["scripting","activeTab","storage"],
+  "permissions": ["scripting","activeTab","storage","tabs"],
   
   "action": {
     "default_popup": "popup.html",
@@ -26,8 +26,7 @@
   "content_scripts": [
     {
       "matches": ["https://*/*"],
-      "js": ["content.js"]
-
+      "js": ["content.js"] 
     }
   ]
 }

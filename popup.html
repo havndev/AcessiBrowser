@@ -27,7 +27,7 @@
       <div>
         <button  class="backbutton" id="goBack1"> &larr; </button>
       </div>
-    <div style="margin-top: 50px;font-family:Arial Black;display: flex;flex-direction: column;margin-top: 50px;justify-content: space-between;height: 70%;">
+    <div style="margin-top: 50px;font-family:Verdana;display: flex;flex-direction: column;margin-top: 50px;justify-content: space-between;height: 70%;">
         <div >
         <label for="fontSelect">Fonte: </label>
         <select id="fontSelect" style="border-radius: 10px; height: 30px;font-size: 10;">
@@ -81,9 +81,19 @@
       <div>
         <button  class="backbutton" id="goBack2"> &larr; </button>
       </div>
-      <div>
-        
+      <div style="margin-top: 50px; font-size: 17px; font-family: Verdana; display: flex; flex-direction: column; margin-top: 20px;height: 70%;">
+        <label for="optionsSelect">Select an option:</label>
+        <select id="optionsSelect">
+          <option value="None">Normal</option>
+          <option value="invertColors">Invert Colors</option>
+          <option value="Sepia">Sepia</option>
+          <option value="Grayscale">Grayscale</option>
+          <option value="Deuteranopia">Deuteranopia</option>
+          <option value="Tritanopia">Tritanopia</option>
+          <option value="Protanopia">Protanopia</option>
+        </select>
       </div>
+      
     </div>
 <!-- Div do Form do Color Add -->
     <div class="normalForm" id="form3" style="display: none;">

@@ -18,6 +18,8 @@ const form2 = document.getElementById('form2');
 const form3 = document.getElementById('form3');
 const form4 = document.getElementById('form4');
 
+const checkboxDeuteranopia = document.getElementById('Deuteranopia');
+
 
 // Botões GoBack
 
@@ -214,6 +216,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var letterSpacingSlider = document.getElementById('letterSpacingSlider');
   var letterSpacingValue = document.getElementById('letterSpacingValue');
   var inputCor = document.getElementById('inputCor');
+  var optionsSelect = document.getElementById('optionsSelect');
+
+  
 
   //Cor
   inputCor.addEventListener('change', function () {
@@ -239,6 +244,12 @@ document.addEventListener('DOMContentLoaded', function () {
     fontSizeValue.textContent = fontSize;
     sendMessageToContentScript({ fontSize: fontSize });
   });
+
+  //Filtros Cores
+  optionsSelect.addEventListener('change', function () {
+    sendMessageToContentScript({ option: optionsSelect.value });
+
+  });
   
 
   // Send a message to the content script
@@ -249,8 +260,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-
 
 // Função que converte o ColorAdd numa imagem da cor
 function convertToColorADD(color) {
@@ -274,3 +283,31 @@ function convertToColorADD(color) {
     return "Unknown color";
   }
 }
+
+// //Funcao da Deteranopia
+// checkboxDeuteranopia.addEventListener('click', function () {
+//   const enableDeuteranopia = checkboxDeuteranopia.checked;
+//   console.log(checkboxDeuteranopia.checked)
+//   sendMessageToContentScript({ enableDeuteranopia });
+
+//   function sendMessageToContentScript(message) {
+//     console.log('Sending message to content script:', message);
+//     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+//       chrome.tabs.sendMessage(tabs[0].id, message);
+//     });
+//   }
+  
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+

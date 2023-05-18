@@ -165,8 +165,33 @@ text-align: center ;
   
 } 
 
+#optionsSelect::-ms-expand {
+  display: none;
+}
+#optionsSelect{
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #888888;
+  overflow: hidden;
+  border-radius: .25em;
+  color: #FFF;
+  cursor: pointer;
+  font-size:Verdana;
+}
 
-
-
+#optionsSelect::after{
+  content: '\25BC';
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #000;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
+  color: #ffffff;
+}
 
 
