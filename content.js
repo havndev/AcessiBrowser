@@ -1,7 +1,20 @@
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
   if (request.font) {
-    document.body.style.fontFamily = request.font;
+    console.log(request.font);
+    if (request.font === "None"){
+      var elements = document.querySelectorAll('*');
+    elements.forEach(function (element) {
+    element.style.fontFamily = '';
+  });
+    }
+    else {
+      var elements = document.querySelectorAll('*');
+      elements.forEach(function (element) {
+      element.style.fontFamily = request.font;
+    });
+    }
+   
   }
   if (request.fontSize) {
     var elements = document.querySelectorAll('*');
@@ -13,7 +26,20 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     document.body.style.letterSpacing = request.letterSpacing;
   }
   if (request.color) {
-    document.body.style.color = request.color;
+    console.log(request.color);
+    if (request.color === "corNone"){
+    var elements = document.querySelectorAll('*');
+    elements.forEach(function (element) {
+    element.style.color = '';
+  });
+    }
+    else { 
+    var elements = document.querySelectorAll('*');
+    elements.forEach(function (element) {
+    element.style.color = request.color;
+  });
+    }
+  
   }
   if (request.option === "invertColors") {
     invertColors();
