@@ -265,15 +265,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function convertToColorADD(color) {
  
   const coloraddSymbols = {
-    red: "images/coloradd_red.png",
-    green: "images/coloradd_green.png",
-    blue: "images/coloradd_blue.png",
-    yellow: "images/coloradd_yellow.png",
-    purple: "images/coloradd_purple.png",
-    orange: "images/coloradd_orange.png",
-    black: "images/coloradd_black.png",
-    white: "images/coloradd_white.png",
-    brown: "images/coloradd_brown.png",
+    Simbolo: "images/coloradd_none.png",
+    Vermelho: "images/coloradd_red.png",
+    Verde: "images/coloradd_green.png",
+    Azul: "images/coloradd_blue.png",
+    Amarelo: "images/coloradd_yellow.png",
+    Roxo: "images/coloradd_purple.png",
+    Laranja: "images/coloradd_orange.png",
+    Preto: "images/coloradd_black.png",
+    Branco: "images/coloradd_white.png",
+    Castanho: "images/coloradd_brown.png",
     
   };
 
