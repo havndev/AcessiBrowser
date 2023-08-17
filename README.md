@@ -1,6 +1,9 @@
-AcessiBrowser is a Chrome Extension built to help people who have Visual deficencies Browse The Web.
+AccessiBrowser: Enabling Enhanced Web Browsing for Individuals with Visual Impairments
 
-It was developed to be presented as the final project in "Interação Pessoa Computador", a curricular unit from my college.
+AccessiBrowser, a Chrome Extension born from my efforts in the "Interação Pessoa Computador" curriculum, represents a significant milestone in my journey as a computer science graduate. Created with JavaScript and HTML, this extension underscores my commitment to fostering inclusivity and accessibility within the digital landscape, specifically tailored to individuals with visual impairments.
 
-Altough it can still be improved, in its current state it can help people by allowing them to change various elements in a browser, like font,font-size, color, etc.
+The inception of AccessiBrowser was driven by a profound desire to bridge the gap between technology and the unique needs of users with visual deficiencies. Although the extension remains a work in progress, its current iteration stands as a testament to my dedication to creating a tool that empowers and facilitates meaningful web interactions for individuals facing visual challenges.
 
+At its core, AccessiBrowser provides users with visual impairments the flexibility to tailor their browsing experiences according to their individual preferences. Through simple yet powerful features, users can adjust critical elements of the browser interface, including font styles, font sizes, color schemes, and more. This level of customization ensures that web content becomes comprehensible and navigable, fostering an environment where users can engage with digital resources with confidence.
+
+Built using JavaScript and HTML, AccessiBrowser seamlessly integrates with the Google Chrome browser, broadening its accessibility to a wide user base. The extension's intuitive interface and user-friendly controls exemplify my dedication to creating a positive user experience. While I acknowledge that there's potential for further enhancement, I am proud of the strides made in developing a tool that contributes positively to the accessibility landscape.
