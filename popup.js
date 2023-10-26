@@ -265,16 +265,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function convertToColorADD(color) {
  
   const coloraddSymbols = {
-    Simbolo: "images/coloradd_none.png",
-    Vermelho: "images/coloradd_red.png",
-    Verde: "images/coloradd_green.png",
-    Azul: "images/coloradd_blue.png",
-    Amarelo: "images/coloradd_yellow.png",
-    Roxo: "images/coloradd_purple.png",
-    Laranja: "images/coloradd_orange.png",
-    Preto: "images/coloradd_black.png",
-    Branco: "images/coloradd_white.png",
-    Castanho: "images/coloradd_brown.png",
+    Symbol: "images/coloradd_none.png",
+    Red: "images/coloradd_red.png",
+    Green: "images/coloradd_green.png",
+    Blue: "images/coloradd_blue.png",
+    Yellow: "images/coloradd_yellow.png",
+    Purple: "images/coloradd_purple.png",
+    Orange: "images/coloradd_orange.png",
+    Black: "images/coloradd_black.png",
+    White: "images/coloradd_white.png",
+    Brown: "images/coloradd_brown.png",
     
   };
 
@@ -284,6 +284,7 @@ function convertToColorADD(color) {
     return "Unknown color";
   }
 }
+
 
 
 

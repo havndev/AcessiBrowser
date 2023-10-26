@@ -12,10 +12,10 @@
     <div class="navbar">
       <ul style="display: flex; flex-direction: column;align-items: center;">
 
-        <li class="butao"><a  id="menu1">Fonte</a></li>
-        <li class="butao"><a  id="menu2">Filtros de Cor</a></li>
+        <li class="butao"><a  id="menu1">Font Changes</a></li>
+        <li class="butao"><a  id="menu2">Web Filters</a></li>
         <li class="butao"><a  id="menu3">ColorAdd</a></li>
-        <li class="butao"><a  id="menu4">Acerca</a></li>
+        <li class="butao"><a  id="menu4">About</a></li>
       </ul>
     </div>
   </div>
@@ -23,15 +23,15 @@
   <div id="mainForm" style="height:100%;height: 100%;display:none;">
     <!-- Div do form das fontes -->
 <div class="normalForm" id="form1">
-      <h3 class="TituloMenu">Fonte</h3>
+      <h1 class="TituloMenu">Font Changes</h1>
         <div>
         <button  class="backbutton" id="goBack1"> &larr; </button>
         </div>
     <div style="margin-top: 50px;font-family:Verdana;display: flex;flex-direction: column;margin-top: 50px;justify-content: space-between;height: 70%;">
         <div >
-        <label for="fontSelect">Fonte: </label>
+        <label for="fontSelect">Font: </label>
         <select id="fontSelect" style="border-radius: 10px; height: 30px;font-size: 10;">
-            <option value="None">Fonte</option>
+            <option value="None">Font</option>
             <option value="Arial">Arial</option>
             <option value="Verdana">Verdana</option>
             <option value="Tahoma">Tahoma</option>
@@ -43,26 +43,26 @@
         </select>
         </div>
         <div>
-        <label for="fontSizeSlider">Tamanho:</label>
+        <label for="fontSizeSlider">Font Size:</label>
         <input type="range" id="fontSizeSlider" min="10" max="50" value="12">
         <span id="fontSizeValue">12px</span>
         </div>
 
         <div>
-          <label for="letterSpacingSlider">Escpacamento das Letras:</label>
+          <label for="letterSpacingSlider">Font Spacing:</label>
           <input type="range" id="letterSpacingSlider" min="-1" max="5" value="0">
           <span id="letterSpacingValue">0</span>
         </div>
 
         <div>
-          <label for="inputCor">Cor: </label>
+          <label for="inputCor">Font Color: </label>
         <select id="inputCor" style="border-radius: 10px; height: 30px;font-size: 10;">
-            <option value="corNone">Cor</option>
-            <option value="red">Vermelho</option>
-            <option value="green">Verde</option>
-            <option value="yellow">Amarelo</option>
-            <option value="white">Branco</option>
-            <option value="black">Preto</option>
+            <option value="corNone">Color</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
         </select>
         </div>
      </div>   
@@ -70,15 +70,15 @@
     
 <!-- Div do form dos filtros -->
     <div class="normalForm" id="form2" >
-      <h3  class="TituloMenu" style="text-align: center;">Filtros de Cor</h3>
+      <h3  class="TituloMenu" style="text-align: center;">Color Filters</h3>
       <div>
         <button  class="backbutton" id="goBack2"> &larr; </button>
       </div>
       <div style="margin-top: 50px; font-size: 17px; font-family: Verdana; display: flex; flex-direction: column; margin-top: 20px;height: 70%;">
-        <label for="optionsSelect">Escolha uma opcao:</label>
+        <label for="optionsSelect">Choose a filter:</label>
         <select id="optionsSelect">
-          <option value="None">Normal</option>
-          <option value="invertColors">Inverter Cores</option>
+          <option value="None">No filters</option>
+          <option value="invertColors">Invert colors</option>
           <option value="Sepia">Sepia</option>
           <option value="Grayscale">Grayscale</option>
           <option value="Deuteranopia">Deuteranopia</option>
@@ -98,45 +98,46 @@
       <div class="coloradd">
         <div id="colorMenuselect">
           <select  id="colorSelect">
-            <option value="Simbolo">Cor</option>
-            <option value="Vermelho">Vermelho</option>
-            <option value="Verde">Verde</option>
-            <option value="Azul">Azul</option>
-            <option value="Amarelo">Amarelo</option>
-            <option value="Laranja">Cor de Laranja</option>
-            <option value="Preto">Preto</option>
-            <option value="Branco">Branco</option>
-            <option value="Roxo">Roxo</option>
-            <option value="Castanho">Castanho</option>
+            <option value="Symbol">Color</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Orange">Orange</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
           </select>
-          <button id="coloraddButton">Converter para ColorAdd</button>
+          <button id="coloraddButton">Convert to symbol</button>
         </div>
       <!-- Div da imagem da cor -->
         <div id="resultContainer" style="height: 200px;">
           <p style="font-size: 20px;text-transform: uppercase;font-family:Arial Black;" id="resultText"></p>
-          <img id="resultImage" src="" alt="ColorADD Symbol" height="200px" width="200px" />
+          <img id="resultImage" src="images\coloradd_none.png" alt="ColorADD Symbol" height="200px" width="200px" />
       </div>
     </div>
   </div>
 <!-- Div do form das opcoes -->
     <div class="normalForm" id="form4">
-      <h3  class="TituloMenu" style="text-align: center;">Acerca</h3>
+      <h3  class="TituloMenu" style="text-align: center;">About</h3>
       <div>
         <button  class="backbutton" id="goBack4"> &larr; </button>
       </div>
-      <div style="margin-top: 50px; font-size: 12px; font-family: Verdana; display: flex; flex-direction: column; margin-top: 20px;height: 70%;">
+      <div style="margin-top: 50px; font-size: 12px; font-family: Verdana; display: flex; flex-direction: column; margin-top: 20px;height: 70%;font-weight: bold;">
         <p >
-          O AcessiBrowser foi criado como um projeto de faculdade para facilitar a acessibilidade num browser da web para pessoas com insuficiencias visuais.
+          AcessiBrowser was created as a college project to enhance accessibility in a web browser for individuals with visual impairments.
         </p>
         <p>
-           A extensao conta com diferentes formas de facilitar este acesso a web, tais como uma aba que permite transformar o texto, modificando a fonte das letras, o seu tamanho, o espacamento entre letras e a sua cor.
+          The extension offers various ways to improve web accessibility, such as a tab that allows text transformation by changing the font, its size, letter spacing, and color.
         </p>
         <p>
-           Tambem possui uma aba onde e possivel transformar as cores da web, tal como aplicar filtros de cor ( Inverter Cores, Sepia,Grayscale), mas tambem permite mudar para modos que faciltiam a compreensao de conteudo para pessoas que sofram de daltonismo.
+          It also has a tab where you can transform web colors, including applying color filters (Invert Colors, Sepia, Grayscale). It also allows switching to modes that enhance content comprehension for individuals with color blindness.
         </p>
         <p>
-           Por fim, tambem possui uma que implementa o ColorAdd, que permite traduzir cores para simbolos, de forma a aumentar a inclusao de todos os utilizadores da web.
+          Finally, it also includes an implementation of ColorAdd, which translates colors into symbols to increase the inclusivity of all web users.
         </p>
+        <a class="git" target="_blank"  href="https://github.com/havndev/AcessiBrowser">Github</a>
       </div>
   </div>
  </div>

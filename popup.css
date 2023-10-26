@@ -2,7 +2,7 @@
 
 
 body {
-  background-color: #e3f8fc;
+  background-color: #d3eaf0;
   width: 400px;
   height: 400px;
   padding: 20px;
@@ -38,7 +38,7 @@ body {
   justify-content: center;
   justify-items: center;
  align-items: center;
-  background-color: #f0bd7b;
+  background-color: #be863d;
   display: flex;
   color: #FFF;
   text-decoration: none;
@@ -58,6 +58,7 @@ body {
     display: flex;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .navbar a:hover{
@@ -78,7 +79,7 @@ body {
 .backbutton{
   font-size: 30px;
   border-radius: 15px;
-  background-color: #f0bd7b;
+  background-color: #be863d;
   color: white;
  border: none;
 }
@@ -86,17 +87,17 @@ body {
 .backbutton:hover{
   font-size: 30px;
   border-radius: 15px;
-  background-color: #f0bd7b;
+  background-color: #c09d70;
   color: white;
  outline: auto;
-  outline-color: #ffffff;
+  outline-color: black;
 }
 
 .TituloMenu{
   text-align: center;
   color: #000000;
   font-family: 'Quicksand', sans-serif; 
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 0;
 
 }
@@ -192,6 +193,24 @@ text-align: center ;
   pointer-events: none;
   transition: .25s all ease;
   color: #ffffff;
+}
+
+.git {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  background: #be863d;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  
+} 
+
+.git:hover {
+  background: white;
+  color: #007bff;
+
 }
 
 
