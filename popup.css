@@ -209,8 +209,8 @@ text-align: center ;
 
 .git:hover {
   background: white;
-  color: #007bff;
-
+  color: black;
+  border-radius: 10px;
 }
 
 
